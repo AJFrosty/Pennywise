@@ -1,0 +1,32 @@
+{
+  "users": {
+    "Frosty": {
+      "name": "Ajante F.",
+      "role": "Admin",
+      "email": "frosty@pennywise.com",
+      "password": "admin",
+      "cookie": 0,
+      "profile": {
+        "username": "ajfrosty",
+        "bio": "Need me a Golden Ticket....",
+        "budget": 2500,
+        "spent": 43.25,
+        "saved": 2.56
+      }
+    },
+    "marigold": {
+      "name": "Manni",
+      "role": "Admin",
+      "email": "manni@pennywise.com",
+      "password": "password",
+      "cookie": 1,
+      "profile": {
+        "username": "marigold",
+        "bio": "Eating the Girls Up",
+        "budget": 300,
+        "spent": 0,
+        "saved": 0
+      }
+    }
+  }
+}
