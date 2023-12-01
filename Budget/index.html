@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budgeting Information</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting Information</h1>
+        <!-- Expense Tracking Section -->
+        <div id="expenseTagging">
+            <label for="expenseInput">Add Expense:</label>
+            <input type="text" id="expenseInput" placeholder="e.g., Food">
+            <label for="expenseCost">Cost:</label>
+            <input type="text" id="expenseCost" placeholder="$">
+            <button onclick="tagExpense()">Tag Expense</button>
+            <div id="taggedExpenses"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

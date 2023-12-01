@@ -12,6 +12,11 @@
         "budget": 2500,
         "spent": 43.25,
         "saved": 2.56
+      },
+      "budget": {
+        "expenses": {
+          "expense": 0
+        }
       }
     }
   }

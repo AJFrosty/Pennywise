@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#expenseTagging, #budgetQuiz, #progressBars {
+    margin-bottom: 30px;
+}
+
+input, button {
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#taggedExpenses {
+    margin-top: 10px;
+}
+
+#progressBars div {
+    margin-top: 10px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 5px;
+}
