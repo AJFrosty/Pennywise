@@ -28,6 +28,6 @@ Pennywise is a dynamic online marketplace with a mission to promote local busine
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/pennywise.git
+   git clone https://github.com/AJFrosty/Pennywise/
    cd SignIn
    npm run start
