@@ -12,7 +12,7 @@ Pennywise is a dynamic online marketplace with a mission to promote local busine
 
 1. **Local Business Promotion:** 📈 Connect local businesses with customers through our online marketplace.
 
-2. **Financial Literacy Integration:** 💡 Educate young individuals (15-24) with financial literacy tools and resources.
+2. **Financial Literacy Integration:** 💡 Educate young individuals with financial literacy tools and resources.
 
 3. **Trade Facilitation:** 🌐 Overcome trade barriers by addressing inter-island transportation costs.
 
