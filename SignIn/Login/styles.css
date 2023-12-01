@@ -1,3 +1,7 @@
+* {
+    color: #fff;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -13,7 +17,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -51,6 +55,9 @@ form {
     position: relative;
 }
 
+a {
+    color: #5995fd;
+}
 .input-group i {
     text-align: center;
     line-height: 55px;
@@ -91,6 +98,15 @@ button {
 
 button:hover {
     background-color: #4d84e2;
+}
+
+img {
+    width: 65%;
+    height: 65%;
+}
+
+h2 {
+    color: #fff
 }
 
 .login {

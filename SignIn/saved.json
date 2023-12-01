@@ -1,17 +1,18 @@
 {
-    "users": {
-      "Frosty": {
-        "name": "Ajante F.",
-        "role": "Admin",
-        "email": "frosty@pennywise.com",
-        "password": "admin",
-        "cookie": 0,
-        "profile": {
-          "bio": "Admin of PennyWise",
-          "budget": 100.00,
-          "spent": 43.25,
-          "saved": 2.56
-        }
+  "users": {
+    "Frosty": {
+      "name": "Ajante F.",
+      "role": "Admin",
+      "email": "frosty@pennywise.com",
+      "password": "admin",
+      "cookie": 0,
+      "profile": {
+        "username": "ajfrosty",
+        "bio": "Need me a Golden Ticket....",
+        "budget": 2500,
+        "spent": 43.25,
+        "saved": 2.56
       }
     }
   }
+}

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: #fff;
 }
 
 body {
@@ -15,16 +16,20 @@ body {
 }
 
 h2 {
-    color: #444;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
     min-height: 100vh;
     overflow: hidden;
+}
+
+img {
+    padding-top: 60px;
 }
 
 .input-group {
@@ -104,6 +109,10 @@ input {
     font-weight: 100;
     font-size: 1.1rem;
     color: #333;
+}
+
+a {
+    color: #5995fd;
 }
 
 button {
