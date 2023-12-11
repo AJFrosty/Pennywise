@@ -18,7 +18,7 @@ function login() {
 
                 if (userPassword && userPassword === passwordInput) {
                     document.cookie = `user-id=${userObject.cookie}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/; SameSite=None; Secure`;
-                    window.location.href = "../../Profile Page/index.html";
+                    window.location.href = "../../Profile/index.html";
                 } else {
                     alert('Incorrect password. Please try again.');
                 }

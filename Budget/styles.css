@@ -1,25 +1,54 @@
+* {
+    color: #fff
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #000;
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#expenseDropdown, #newExpenseCost {
+    color: #000;
+}
+
+#expenseTagging {
     padding: 20px;
+    background-color: #000;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+img {
+    max-width: 100%;
+    padding-top: 20px;
+    height: 60%;
 }
 
-#expenseTagging, #budgetQuiz, #progressBars {
-    margin-bottom: 30px;
+#graphs {
+    padding: 20px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#graphs img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    color: #8352ff;
 }
 
 input, button {
@@ -29,15 +58,10 @@ input, button {
 button {
     padding: 8px;
     cursor: pointer;
+    color: #000;
 }
 
 #taggedExpenses {
     margin-top: 10px;
-}
-
-#progressBars div {
-    margin-top: 10px;
-    height: 20px;
-    background-color: #3498db;
-    border-radius: 5px;
+    padding: 10px;
 }

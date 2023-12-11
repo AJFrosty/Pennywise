@@ -1,0 +1,18 @@
+{
+  "products": {
+    "Name Of Product": {
+      "id": 0,
+      "name": "Fruit",
+      "category": "Groceries",
+      "price": 10,
+      "quantity": 35
+    },
+    "Name Of Product TWO": {
+        "id": 1,
+        "name": "Iphone 12",
+        "category": "Technology",
+        "price": 100000000,
+        "quantity": 1
+      }
+  }
+}

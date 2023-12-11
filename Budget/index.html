@@ -8,17 +8,26 @@
 </head>
 <body>
     <div class="container">
-        <h1>Budgeting Information</h1>
-        <!-- Expense Tracking Section -->
         <div id="expenseTagging">
-            <label for="expenseInput">Add Expense:</label>
-            <input type="text" id="expenseInput" placeholder="e.g., Food">
-            <label for="expenseCost">Cost:</label>
-            <input type="text" id="expenseCost" placeholder="$">
-            <button onclick="tagExpense()">Tag Expense</button>
+            <h1>Budgeting Information</h1>
+            <label for="expenseInput">Edit Expense:</label>
+            <select id="expenseDropdown">
+                <option value="Groceries">Groceries</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Cosmetics">Cosmetics</option>
+                <option value="Technology">Technology</option>
+            </select>
+            <label for="expenseCost">New Cost:</label>
+            <input type="text" id="newExpenseCost" placeholder="$">
+            <button onclick="editExpense()">Edit Expense</button>
             <div id="taggedExpenses"></div>
         </div>
+        <div id="graphs">
+            <img src="./img/Budgeting.png" alt="Graph 1">
+            <img src="./img/Line.png" alt="Graph 2">
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

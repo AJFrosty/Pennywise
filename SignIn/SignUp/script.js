@@ -29,7 +29,16 @@ function registerUser() {
                         budget: 100.00,
                         spent: 0.00,
                         saved: 0.00
+                      },
+                    budget: {
+                        expenses: {
+                          Groceries: 0.00,
+                          Clothing: 0.00,
+                          Cosmetics: 0.00,
+                          Technology: 0.00
+                        }
                       }
+                      
                 };
 
                 // Storing New User to add to THe Json File

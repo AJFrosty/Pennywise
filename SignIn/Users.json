@@ -15,9 +15,39 @@
       },
       "budget": {
         "expenses": {
-          "Candy": 19,
-          "Food ": 230,
-          "Clothing": 350
+          "Groceries": 300,
+          "Clothing": 259,
+          "Cosmetics": 25,
+          "Technology": 400
+        },
+        "cart": {
+          "num": 1,
+          "items": {
+            "1": 1,
+            "2": 0
+          }
+        }
+      }
+    },
+    "It": {
+      "name": "John Doe",
+      "role": "Guest",
+      "email": "it@pennywise.com",
+      "password": "balloon",
+      "cookie": 1,
+      "profile": {
+        "username": "It The Clowb",
+        "bio": "Wanna Play?",
+        "budget": 10,
+        "spent": 0,
+        "saved": 0
+      },
+      "budget": {
+        "expenses": {
+          "Groceries": 100,
+          "Clothing": 90,
+          "Cosmetics": 20,
+          "Technology": 155
         }
       }
     }
