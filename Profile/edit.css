@@ -73,10 +73,7 @@ nav .menu-img {
 
 nav .logo{
     position: relative;
-    z-index: 2;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 180px;
+    width: 60px;
     cursor: pointer;
 }
 
