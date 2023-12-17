@@ -54,3 +54,53 @@ button {
 button:hover {
     background-color: #3d358d;
 }
+
+nav{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-top: 20px;
+    margin-left: -105px;
+    cursor: pointer;
+}
+
+nav .logo{
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul{
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 13px;
+    font-variant: small-caps;
+    position:relative;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover {
+    color: #4f46e5;
+}
