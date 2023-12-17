@@ -2,7 +2,7 @@
 
 Welcome to Pennywise, your gateway to economic growth and financial literacy in the Caribbean! 🚀🌴
 
-![Pennywise Banner](link-to-your-banner-image.png)
+![Pennywise Banner](https://media.discordapp.net/attachments/807743928316067862/1185977452862902342/pennywise.png?ex=65919293&is=657f1d93&hm=662904ac07fc339196dcd6ece531465fc25b9b947284bbec93c272ac8f961b5c&=&format=webp&quality=lossless&width=1325&height=662)
 
 ## About Us ℹ️
 

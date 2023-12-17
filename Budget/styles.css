@@ -18,7 +18,7 @@ body {
     grid-gap: 20px;
 }
 
-#expenseDropdown, #newExpenseCost {
+#expenseDropdown, #newExpenseCost, option {
     color: #000;
 }
 
@@ -109,6 +109,6 @@ nav ul li a{
     color: #fff;
 }
 
-nav ul li:hover {
+li:hover {
     color: #4f46e5;
 }
