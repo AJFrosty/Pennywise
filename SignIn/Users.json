@@ -18,7 +18,7 @@
           "Groceries": 300,
           "Clothing": 259,
           "Cosmetics": 25,
-          "Technology": 400
+          "Technology": 110
         },
         "cart": {
           "num": 1,
@@ -36,9 +36,9 @@
       "password": "balloon",
       "cookie": 1,
       "profile": {
-        "username": "It The Clowb",
-        "bio": "Wanna Play?",
-        "budget": 10,
+        "username": "It The Clown",
+        "bio": "Want To Play?",
+        "budget": 100,
         "spent": 0,
         "saved": 0
       },
