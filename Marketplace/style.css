@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #600083;
+}
+
+#clothing.content-section {
+    margin-top: 500px;
+}
+
+#page-container {
+    padding-top: 100px;
+    background-color: #6a0f59; 
+}
+
+section {
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    size: 0cqmin;
+}
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.business {
+    text-align: center;
+    margin: 20px;
+    padding: 80px;
+    border: 2px solid #333; /* Add a border to the boxes */
+    transition: border-color 0.3s; /* Smooth transition for the border color */
+}
+
+.business:hover {
+    border-color: #d900ff; /* Change border color on hover */
+}
+
+.business img {
+    max-width: 250px;
+}

@@ -1,15 +1,20 @@
 {
+  "homepage": "http://ajfrosty.github.io/SignIn/index.html",
   "name": "registration",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "json-server --watch Users.json --static ."
-  },  
+    "start": "json-server --watch Users.json --static .",
+    "predeploy": "npm run build",
+    "deploy": "gh=pages -d build"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "json-server": "^0.17.4"
   }
 }
