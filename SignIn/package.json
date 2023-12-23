@@ -1,5 +1,5 @@
 {
-  "homepage": "http://ajfrosty.github.io/SignIn/index.html",
+  "homepage": "http://ajfrosty.github.io/Pennywise/SignIn/index.html",
   "name": "registration",
   "version": "1.0.0",
   "description": "",
@@ -8,13 +8,11 @@
     "start": "json-server --watch Users.json --static .",
     "predeploy": "npm run start",
     "deploy": "gh=pages -d build"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^6.1.0",
     "json-server": "^0.17.4"
   }
 }
