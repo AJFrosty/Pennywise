@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny Pilgrimage</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="sidemenu.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>  
+            <img src="../images/menu.png" class="menu-img" alt="menu">
+            <div class="side-menu" id="sideMenu">
+                <a href="#">Profile</a>
+                <a href="#">Help</a>
+            </div>
+            
+            
+            <a href="../FL.html"><img src="../images/logo.png" class="logo" alt="logo"> </a>
+            <ul>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="../Literacy/FL.html">Financial Literacy</a></li>
+                <li><a href="https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:welcome-to-financial-literacy"
+                        title="Check out khanacademy's financial literacy Course!">Course</a></li>
+                <li><a href="../Budget/index.html">Budget</a></li>
+                <li><a href="">My Cart</a></li>
+                <li><a href="../SignIn/Login/index.html" title="LogOut">LogOut</a></li>
+                <li class="dropdown" onclick="toggleDropdown()">
+                    <a href="#" title="Learn more about the financial options available on each island.">Islands</a>
+                    <div class="dropdown-content">
+                        <a href="#">Antigua and Barbuda<br></a>
+                        <a href="#">Bahamas<br></a>
+                        <a href="#">Barbados<br></a>
+                        <a href="#">Belize<br></a>
+                        <a href="#">Dominica<br></a>
+                        <a href="#">Grenada<br></a>
+                        <a href="#">Guyana<br></a>
+                        <a href="#">Haiti<br></a>
+                        <a href="#">Jamaica<br></a>
+                        <a href="#">Montserrat<br></a>
+                        <a href="#">St.Kitts and Nevis<br></a>
+                        <a href="#">St. Lucia<br></a>
+                        <a href="#">St. Vincent and the Grenadines<br></a>
+                        <a href="#">Suriname<br></a>
+                        <a href="#">Trinidad and Tobago<br></a>
+                    </div>
+                </li>
+                <script src="dropdown.js"></script>
+            </ul>
+        </nav>
+
+        <canvas id="gameArea" width="960" height="720"></canvas>
+        <script src="game.js"></script>           
+    
+</body>
+</html>

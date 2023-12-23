@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: #150537;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+
+}
+
+nav{
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 20px 10%;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-top: 20px;
+    margin-left: -105px;
+    cursor: pointer;
+}
+
+nav .logo{
+    position: relative; /* Add this line */
+    z-index: 2; /* Add this line */
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul{
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 13px;
+    font-variant: small-caps;
+    position:relative;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li .dropdown-content {
+    margin-top: 25px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    line-height: 1.1;
+    font-size: 14px;
+    max-width: 550px;
+    width: 175px;
+    top: 100%;
+    right: -95%;
+    opacity: 60%;
+    box-shadow: 0 2px 5px #38ADAE; 
+}
+
+nav ul li.active .dropdown-content {
+    display: block;
+}
+
+
+.side-menu {
+    display: none;
+    z-index: 1; /* Set a z-index higher than the logo */
+    position: fixed;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 100%;
+    color: #fff;
+    padding-top: 20px;
+    transition: transform 1s ease-in-out; 
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.side-menu a:hover {
+    background: #813973;
+}
+
+.side-menu.show {
+    transform: translateX(0);
+}
+
+#gameArea {
+    width: 80%; /* Set your desired width */
+    margin: 0 auto; /* Center the canvas horizontally */
+    display: block; /* Ensure it's treated as a block element */
+    background: #fff; /* Set a background color if necessary */
+}

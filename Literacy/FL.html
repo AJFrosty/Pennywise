@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Landing Page</title>
+    <link rel="stylesheet" href="FL.css">
+    <script src="sidemenu.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>  
+            <img src="images/menu.png" class="menu-img">
+            <div class="side-menu" id="sideMenu">
+                <a href="#">Profile</a>
+                <a href="#">Help</a>
+            </div>
+            
+            
+            <a href="FL.html"><img src="images/logo.png" class="logo"> </a>
+            <ul>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="../Literacy/FL.html">Financial Literacy</a></li>
+                <li><a href="https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:welcome-to-financial-literacy"
+                        title="Check out khanacademy's financial literacy Course!">Course</a></li>
+                <li><a href="../Budget/index.html">Budget</a></li>
+                <li><a href="">My Cart</a></li>
+                <li><a href="../SignIn/Login/index.html" title="LogOut">LogOut</a></li>
+                <li class="dropdown" onclick="toggleDropdown()">
+                    <a href="#" title="Learn more about the financial options available on each island.">Islands</a>
+                    <div class="dropdown-content">
+                        <a href="#">Antigua and Barbuda<br></a>
+                        <a href="#">Bahamas<br></a>
+                        <a href="#">Barbados<br></a>
+                        <a href="#">Belize<br></a>
+                        <a href="#">Dominica<br></a>
+                        <a href="#">Grenada<br></a>
+                        <a href="#">Guyana<br></a>
+                        <a href="#">Haiti<br></a>
+                        <a href="#">Jamaica<br></a>
+                        <a href="#">Montserrat<br></a>
+                        <a href="#">St.Kitts and Nevis<br></a>
+                        <a href="#">St. Lucia<br></a>
+                        <a href="#">St. Vincent and the Grenadines<br></a>
+                        <a href="#">Suriname<br></a>
+                        <a href="#">Trinidad and Tobago<br></a>
+                    </div>
+                </li>
+                <script src="dropdown.js"></script>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/light.png" class="light" id="light">
+            <img src="images/lamp.png" class="lamp"> 
+            <img src="images/couch.png" class="couch"> 
+        </div>
+
+        <!--<div class="video-container">
+            <video width="225" autoplay loop muted>
+              <source src="C:\Users\echid\OneDrive\Desktop\PennyWise\Graphics\Financial Literacy Intro Video.mp4" type="video/mp4">
+            </video>
+        </div>-->
+
+        </div>
+
+        <div class="floating-text" id="floatingText">
+            <h1>Financial literacy<br>is for everyone!</h1>
+            <p>Financial literacy is the ability to manage your finances wisely. It is a lifelong journey of equipping yourself with the 
+                knowledge and skills to make informed decisions about personal and business finances. Regardless of your background, it is important 
+                to empower yourself to navigate the complexities of budgeting and investing to contribute to overall economic stability.
+                Take the initiative to invest in ongoing financial education for a prosperous future. <br>Become penny wise today!</p>
+            <a href="pennyPilgrimage-Game/game.html"><!--Explore the Islands tab to begin.--> Learn while you play!</a>
+        </div>
+        <script src="float.js"></script>
+
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn(){
+            btn.classList.toggle("active")
+            light.classList.toggle("on");
+        }
+    </script>
+
+    
+
+    
+    
+</body>
+</html>
