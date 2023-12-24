@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #600083;
+    background-color: #000;
 }
 
 #clothing.content-section {
@@ -11,7 +11,7 @@ body {
 
 #page-container {
     padding-top: 100px;
-    background-color: #6a0f59; 
+    background-color: #fff; 
 }
 
 section {
@@ -40,7 +40,7 @@ h2 {
 }
 
 .business:hover {
-    border-color: #d900ff;
+    border-color: #eb7aff;
 }
 
 .business img {
@@ -65,7 +65,7 @@ nav .menu-img {
 
 nav .logo{
     position: relative;
-    width: 190px;
+    width: 180px;
     cursor: pointer;
 }
 
@@ -90,6 +90,14 @@ nav ul li a{
     color: #fff;
 }
 
+li a:hover {
+    color: #4f46e5;
+}
+
 nav ul li input {
     width: 300px;
+}
+
+a {
+    color: #5995fd
 }
