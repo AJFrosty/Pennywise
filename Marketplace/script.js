@@ -1,4 +1,3 @@
-// Example business data
 const businesses = [
     { category: "clothing", name: "Clothing Business 1", logo: "img/clothing1.jpeg", link: "#" },
     { category: "clothing", name: "Clothing Business 2", logo: "img/clothing2.jpeg", link: "#" },
@@ -47,7 +46,6 @@ function populateBusinesses(category, containerId) {
               });
 }
 
-// Populate businesses for each category
 populateBusinesses("clothing", "clothing-businesses");
 populateBusinesses("technology", "technology-businesses");
 populateBusinesses("cosmetic", "cosmetic-businesses");

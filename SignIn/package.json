@@ -5,9 +5,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "json-server --watch Users.json --static .",
-    "predeploy": "npm run start",
-    "deploy": "gh=pages -d build"
+    "start": "json-server --watch Users.json --static ."
   },
   "keywords": [],
   "author": "",

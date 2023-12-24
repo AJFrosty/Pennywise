@@ -35,14 +35,61 @@ h2 {
     text-align: center;
     margin: 20px;
     padding: 80px;
-    border: 2px solid #333; /* Add a border to the boxes */
-    transition: border-color 0.3s; /* Smooth transition for the border color */
+    border: 2px solid #333;
+    transition: border-color 0.3s;
 }
 
 .business:hover {
-    border-color: #d900ff; /* Change border color on hover */
+    border-color: #d900ff;
 }
 
 .business img {
     max-width: 250px;
+}
+
+nav{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-top: 20px;
+    margin-left: -105px;
+    cursor: pointer;
+}
+
+nav .logo{
+    position: relative;
+    width: 190px;
+    cursor: pointer;
+}
+
+nav ul{
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-weight: 600;
+    margin-right: 13px;
+    font-variant: small-caps;
+    position:relative;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li input {
+    width: 300px;
 }

@@ -7,74 +7,46 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <!-- favicon -->
     <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
-    <title>Small Business Showcase</title>
+    <title>Marketplace</title>
 </head>
 
 <body>
-    <div id="header-container" class=""></div>
-
-    <!-- Slider Section -->
-    <section id="slider">
-
-        <div id="containerSlider">
-            <div class="slider-image"> <img src="sliderimg/img1.png" alt="image1"> </div>
-        </div>
-
-    </section>
+    <nav>
+        <a href="index.html"><img src="../Literacy/images/logo.png" class="logo"> </a>
+        <ul>
+            <li><input type="text" id="input" name="searchBox" placeholder="Search"></li>
+            <li><a href="../Marketplace/index.html">Marketplace</a></li>
+            <li><a href="../Literacy/FL.html">Financial Literacy</a></li>
+            <li><a href="https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:welcome-to-financial-literacy"
+                    title="Check out khanacademy's financial literacy Course!">Course</a></li>
+            <li><a href="../Budget/index.html">Budget</a></li>
+            <li><a href="">My Cart</a></li>
+            <li><a href="../SignIn/Login/index.html" title="LogOut">LogOut</a></li>
+        </ul>
+    </nav>
 
     <section id="clothing">
         <h2>Clothing</h2>
-        <div class="business-container" id="clothing-businesses">
-            <!-- Businesses will be dynamically added here -->
-        </div>
+        <div class="business-container" id="clothing-businesses"></div>
     </section>
 
     <section id="technology" class="">
         <h2>Technology</h2>
-        <div class="business-container" id="technology-businesses">
-            <!-- Businesses will be dynamically added here -->
-        </div>
+        <div class="business-container" id="technology-businesses"></div>
     </section>
 
     <section id="cosmetic" class="">
         <h2>Cosmetic</h2>
-        <div class="business-container" id="cosmetic-businesses">
-            <!-- Businesses will be dynamically added here -->
-        </div>
+        <div class="business-container" id="cosmetic-businesses"></div>
     </section>
 
     <section id="groceries" class="">
         <h2>Groceries</h2>
-        <div class="business-container" id="groceries-businesses">
-            <!-- Businesses will be dynamically added here -->
-        </div>
+        <div class="business-container" id="groceries-businesses"></div>
     </section>
   
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script>
-
-        // Load header.html content into the #header-container
-        const headerContainer = document.getElementById("header-container");
-        const headerRequest = new XMLHttpRequest();
-        headerRequest.open("GET", "header.html", true);
-        headerRequest.onreadystatechange = function () {
-            if (headerRequest.readyState == 4 && headerRequest.status == 200) {
-                headerContainer.innerHTML = headerRequest.responseText;
-
-                // Dropdown toggle functionality
-                const categories = document.getElementById("categories");
-                const dropdown = document.querySelector("#dropdown-container");
-
-                categories.addEventListener("click", function () {
-                    dropdown.classList.toggle("active");
-                });
-            }
-        };
-        headerRequest.send();
-    </script>
 </body>
-
 </html>
