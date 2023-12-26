@@ -15,7 +15,17 @@
       },
       "budget": {
         "expenses": {
-          "expense": 0
+          "Groceries": 300,
+          "Clothing": 259,
+          "Cosmetics": 25,
+          "Technology": 110
+        },
+        "cart": {
+          "num": 1,
+          "items": {
+            "1": 1,
+            "2": 0
+          }
         }
       }
     }

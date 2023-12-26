@@ -1,8 +1,7 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 .hero{
@@ -127,11 +126,10 @@ button span{
 
 .couch{
     position: absolute;
-    top: 128%;
+    top: 118%;
     left: -10%;
     transform: translateX(-50%);
     width: 275%;
-    margin-left: -10;
 }
 
 .floating-text{
@@ -142,7 +140,7 @@ button span{
     width: 35%;
     margin-top: 7%;
     margin-left: 75%;
-    top: 69%;
+    top: 60%;
     font-size: 18px;
     transform: translate(-50%, -50%);
     text-align: left;

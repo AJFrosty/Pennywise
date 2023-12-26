@@ -7,17 +7,17 @@
       "password": "admin",
       "cookie": 0,
       "profile": {
-        "username": "ajfrosty",
-        "bio": "Need me a Golden Ticket....",
-        "budget": 2500,
-        "spent": 43.25,
-        "saved": 2.56
+        "username": "FrostyAdmin",
+        "bio": "Hello CSO Judge!",
+        "budget": 1000,
+        "spent": 0,
+        "saved": 0
       },
       "budget": {
         "expenses": {
           "Groceries": 300,
-          "Clothing": 259,
-          "Cosmetics": 25,
+          "Clothing": 150,
+          "Cosmetics": 50.25,
           "Technology": 110
         },
         "cart": {
@@ -29,25 +29,47 @@
         }
       }
     },
-    "It": {
-      "name": "John Doe",
+    "ItTheClown": {
+      "name": "Tester Account",
       "role": "Guest",
-      "email": "it@pennywise.com",
-      "password": "balloon",
+      "email": "test@pennywise.com",
+      "password": "password",
       "cookie": 1,
       "profile": {
-        "username": "It The Clown",
-        "bio": "Want To Play?",
+        "username": "ItTheClown",
+        "bio": "New PennyWise User!",
         "budget": 100,
         "spent": 0,
         "saved": 0
       },
       "budget": {
         "expenses": {
-          "Groceries": 100,
-          "Clothing": 90,
-          "Cosmetics": 20,
-          "Technology": 155
+          "Groceries": 0,
+          "Clothing": 0,
+          "Cosmetics": 0,
+          "Technology": 0
+        }
+      }
+    },
+    "IT": {
+      "name": "It",
+      "role": "Guest",
+      "email": "it@pennywise.com",
+      "password": "password",
+      "cookie": 2,
+      "profile": {
+        "username": "IT",
+        "bio": "New PennyWise User!",
+        "budget": 100,
+        "spent": 0,
+        "saved": 0
+      },
+      "budget": {
+        "expenses": {
+          "Groceries": 0,
+          "Clothing": 0,
+          "Cosmetics": 0,
+          "Technology": 0
         }
       }
     }
