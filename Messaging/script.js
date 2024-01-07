@@ -28,7 +28,7 @@ function displayUsers() {
         userListContainer.appendChild(userElement);
     });
 
-    // Set the first user as active by default
+    //Charles is default chat
     setActiveUser(users[0]);
 }
 
@@ -49,7 +49,7 @@ function displayConversation() {
         conversationContainer.appendChild(messageElement);
     });
 
-    // Scroll to the bottom of the conversation
+    //Scrolling Feature to the top of the chat
     conversationContainer.scrollTop = conversationContainer.scrollHeight;
 }
 
@@ -63,7 +63,7 @@ function sendMessage() {
 
         displayConversation();
 
-        // Clear input
+        //Clear chat message input after sending
         messageInput.value = '';
     }
 }

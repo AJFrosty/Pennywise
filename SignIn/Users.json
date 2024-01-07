@@ -7,7 +7,7 @@
       "password": "admin",
       "cookie": 0,
       "profile": {
-        "username": "FrostyAdmin",
+        "username": "Frosty",
         "bio": "Hello CSO Judge!",
         "budget": 1000,
         "spent": 0,
@@ -26,50 +26,6 @@
             "1": 1,
             "2": 0
           }
-        }
-      }
-    },
-    "ItTheClown": {
-      "name": "Tester Account",
-      "role": "Guest",
-      "email": "test@pennywise.com",
-      "password": "password",
-      "cookie": 1,
-      "profile": {
-        "username": "ItTheClown",
-        "bio": "New PennyWise User!",
-        "budget": 100,
-        "spent": 0,
-        "saved": 0
-      },
-      "budget": {
-        "expenses": {
-          "Groceries": 0,
-          "Clothing": 0,
-          "Cosmetics": 0,
-          "Technology": 0
-        }
-      }
-    },
-    "IT": {
-      "name": "It",
-      "role": "Guest",
-      "email": "it@pennywise.com",
-      "password": "password",
-      "cookie": 2,
-      "profile": {
-        "username": "IT",
-        "bio": "New PennyWise User!",
-        "budget": 100,
-        "spent": 0,
-        "saved": 0
-      },
-      "budget": {
-        "expenses": {
-          "Groceries": 0,
-          "Clothing": 0,
-          "Cosmetics": 0,
-          "Technology": 0
         }
       }
     }

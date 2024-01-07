@@ -30,7 +30,6 @@ h2 {
     gap: 40px;
 }
 
-
 .business {
     text-align: center;
     margin: 20px;
@@ -48,7 +47,7 @@ h2 {
     height: 250px;
 }
 
-nav{
+nav {
     position: relative;
     z-index: 1;
     display: flex;
@@ -64,29 +63,37 @@ nav .menu-img {
     cursor: pointer;
 }
 
-nav .logo{
+nav .logo {
     position: relative;
     width: 180px;
     cursor: pointer;
 }
 
-nav ul{
+nav .cart img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+
+nav ul {
     margin-top: 20px;
     flex: 1;
     text-align: right;
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     font-weight: 600;
     margin-right: 13px;
     font-variant: small-caps;
-    position:relative;
+    position: relative;
     cursor: pointer;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
 }
@@ -100,5 +107,5 @@ nav ul li input {
 }
 
 a {
-    color: #5995fd
+    color: #5995fd;
 }
