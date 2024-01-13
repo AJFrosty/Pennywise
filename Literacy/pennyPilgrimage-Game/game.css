@@ -14,6 +14,23 @@
 
 }
 
+.hidden{
+    display: none;
+    
+}
+
+.hidden0{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    font-size: 1.5vh;
+    color: #534F52;
+    top: 82%;
+    left: 51.5%;
+    width: 35vh;
+    height: 7vh;
+}
+
 nav{
     position: relative; /* Add this line */
     z-index: 1; /* Add this line */
@@ -26,7 +43,7 @@ nav{
 nav .menu-img {
     width: 25px;
     margin-top: 20px;
-    margin-left: -105px;
+    margin-left: -8%;
     cursor: pointer;
 }
 
@@ -81,9 +98,9 @@ nav ul li.active .dropdown-content {
 
 
 .side-menu {
-    display: none;
     z-index: 1; /* Set a z-index higher than the logo */
     position: fixed;
+    margin-left: 4%;
     margin-top: 100px;
     top: 0;
     left: 0;
@@ -110,9 +127,207 @@ nav ul li.active .dropdown-content {
     transform: translateX(0);
 }
 
+.dialogue{
+    position: absolute;
+}
+
+#canvasContainer{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+
+#gameBar{
+    border: 5px #000;
+    width: 61vh;
+    height: auto;
+    margin-left: 3%;
+    margin-right: 1%;
+    background-color: #C3AC90;
+}
+
+#helpContent{
+    position: absolute;
+    padding: 1vh;
+    top: 27%;
+    left: 4%;
+    width: 37vh;
+    height: 40vh;
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/help.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-variant: small-caps;
+
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 62%;
+    width: 15vh;
+    height: 5vh;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #947b5d;
+    font-variant: small-caps;
+    font-weight: bold;
+    color:#fff;
+}
+
+#gameNavBar{
+    display: flex;
+}
+
+#questOnePrompt{
+    display: none;
+    position: absolute;
+    top: 3.5%;
+    left: 53%;
+    width: 20vh;
+    height: 1.5vh;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #534F52;
+}
+#interactionZone{
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/ameliaAlert.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    width: 1vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+/*.dialogue{
+    display: none;
+}
+
+#dialogueBox{
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/dialogueBox.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 50vh;
+    height: auto;
+}
+
+#previous
+#forward*/
+
+#navBarData{
+    flex: 1;
+    align-items: center;
+    margin-left: .5vh;
+    margin-right: .5vh;
+    top: 2.5%;
+    left: 37%;
+    width: 55vh;
+    height: 3vh;
+    position: absolute;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5vh;
+    color: #534F52;
+}
+#gameLevel{
+    max-width: 100%;
+    width: 6.5vh;
+}
+#Pennies{
+    max-width: 100%;
+    width: 9.5vh;
+}
+
+#money{
+    text-align: right;
+
+}
+
+#Tips{
+   margin-left: 1vh;
+   max-width: 100%;
+   width: 25vh;
+}
+
+#Clue{
+    max-width: 100%;
+    width: 15vh;
+}
+  
+
 #gameArea {
-    width: 80%; /* Set your desired width */
-    margin: 0 auto; /* Center the canvas horizontally */
+    width: 55%;
+    margin-left: 0;
+    margin-right: 10%;
     display: block; /* Ensure it's treated as a block element */
-    background: #fff; /* Set a background color if necessary */
+    background: #000; /* Set a background color if necessary */
+}
+
+#ameliaDialogue{
+    position: absolute;
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/ameliaDialogue.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 80%;
+    left: 45%;
+    width: 47.625vh;
+    height: 9.3vh;
+}
+
+#previous{
+    z-index: 2;
+    position: absolute;
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/leftArrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 92%;
+    left: 53%;
+    width: 1vh;
+    height: 1vh;
+    cursor: pointer;
+}
+
+#next{
+    z-index: 2;
+    position: absolute;
+    background-image: url('C:/Users/echid/OneDrive/Desktop/Financial Literacy/pennyPilgrimage-Game/img/rightArrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 92%;
+    left: 77%;
+    width: 1vh;
+    height: 1vh;
+    cursor: pointer;
+}
+
+#message {
+  display: none;
+  font-size: 100px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#options {
+  display: none;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 32px;
+  cursor: pointer;
+  margin: 5px;
 }

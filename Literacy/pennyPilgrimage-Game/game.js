@@ -1,160 +1,167 @@
 const gameArea = document.querySelector('canvas');
+const element = document.getElementById("startButton")
 const context = gameArea.getContext('2d');
+const backgroundImage = new Image();
+const navBarIcons1 = new Image();
+const previousButtonImage = new Image();
+const nextButtonImage = new Image();
+const dialogueBoxImage = new Image();
 
-const boundaries = []
-for (let i = 0; i < boundaries.length; i+=60) {
-    boundaries.push(boundaries.slice(i, 60 + i))
-}
+const messageChunks = [
+  "Welcome to the Penny Pilgrimage mini game - a fun and interactive way to learn money management skills!",
+  "Financial literacy is the ability to manage money wisely. Its never too late or early to start learning. ",
+  "It encompasses 9 areas: budgeting, saving, investing, insurance, banking, debt, credit, payment methods, and earning.",
+];
+  
+// Paths to images
 
-class Collision {
-    static width = 16
-    static height = 16
-    constructor({position}) {
-        this.position = position
-        this.width = 16
-        this.height = 16
-    }
-    draw () {
-        context.fillStyle = 'red'
-        context.fillRect(this.position.x, this.position.y, this.width, this.height)
-    }
-}
+backgroundImage.src = "img/gameMap2.png";
+navBarIcons1.src = "img/navBarIcons1.png";
+previousButtonImage.src = "img/leftArrow.png";
+nextButtonImage.src = "img/rightArrow.png";
+dialogueBoxImage.src = "img/ameliaDialogue.png";
 
-const collisions = []
-
-boundaries.forEach((row, i) => {
-    row.forEach((symbol, j) => {
-        if (symbol === 52432 || symbol === 3221277904 || symbol === 2684406992)
-        collisions.push(
-            new Collision({
-                position: {
-                    x: j * Collision.width,
-                    y: i * Collision.height
-                }
-        
-            })
-        )
-    })
+startButton.addEventListener('click',() =>{
+    console.log('start clicked');
+    //hides the button once clicked
+    startButton.style.display = 'none';
+    startGame();
+    revealLink('navBarData');
+    revealLink('questOnePrompt');   
+});
+    
+    
+document.getElementById('helpLink').addEventListener('click', ()=>{
+  //Toggle the vivbility of the help screen
+  const helpContent = document.getElementById('helpContent');
+  helpContent.style.display = (helpContent.style.display === 'none' || helpContent.style.display === '') ? 'block' : 'none';
 })
 
-const image = new Image();
-image.src = "img/gameMap2.png";
-image.onload = init;
+document.getElementById('questOnePrompt').addEventListener('click', ()=>{
+  revealLink("ameliaDialogue");
+  revealLink("previous");
+  revealLink("next");
+  revealLink("dialogue1");
+  queueDialogue();
+  //revealLink("dialogueBox");
+})
 
-const playerImage = new Image();
-playerImage.src = "img/Alex_run_down - Copy.png";
-playerImage.onload = init;
-
-let imagesLoaded = 0;
-
-function init() {
-    imagesLoaded++;
-
-    if (imagesLoaded === 2) {
-        animate();
-    }
-}
-
-class Sprite {
-    constructor({ position, velocity, image }) {
-        this.position = position;
-        this.image = image;
-    }
-
-    draw() {
-        context.fillStyle = 'red'
-        context.drawImage(this.image, this.position.x, this.position.y);
-    }
-}
-
-
-const background = new Sprite({
-    position: { x: 0, y: 0 },
-    image: image
-});
-
-const player = new Sprite({
-    position: { x: 30, y: 270 },
-    image: playerImage
-});
-
-const keys = {
-    w: { pressed: false },
-    a: { pressed: false },
-    s: { pressed: false },
-    d: { pressed: false },
+function startGame(){
+    context.drawImage(backgroundImage, 0, 0, gameArea.width, gameArea.height);
+    context.drawImage(navBarIcons1, 20, 7 );
 };
 
-let zoomLevel = 1;
-const zoomIncrement = 0.02;
+function revealLink(elementId){
+  var element = document.getElementById(elementId);
+  element.style.display = 'flex';
+};
 
-function animate() {
-    window.requestAnimationFrame(animate);
+function hideLink(elementId) {
+    var element = document.getElementById(elementId);
+    element.style.display = 'none';
+};
+
+var currentChunk = 1;
+
+function queueDialogue(){
+  previous.addEventListener('click',() =>{
+    console.log('previous clicked');
+    if (currentChunk == 2){
+      hideLink("dialogue2");
+      revealLink("dialogue1");
+      currentChunk--;
+    }
+    else if(currentChunk == 3){
+      hideLink("dialogue3");
+      revealLink("dialogue2");
+      currentChunk--;
+    }
+
+  })
+
+
+
+next.addEventListener('click',() =>{
+    console.log('next clicked');
+    if (currentChunk == 1){
+      hideLink("dialogue1");
+      revealLink("dialogue2");
+      currentChunk++;
+    }
+    else if(currentChunk == 2){
+    hideLink("dialogue2");
+    revealLink("dialogue3");
+    currentChunk++;
+    }
     
-    context.clearRect(0, 0, gameArea.width, gameArea.height);
 
-    context.save();
-    context.scale(zoomLevel, zoomLevel);
+  })
+};
 
-    background.draw();
-    collisions.forEach(Collision => {
-        Collision.draw()
-    })
-    player.draw();
+   
+var levelNumber = 0;
+//var currentChunk = 1;
+var dialoguesLength = 3;
 
-    context.restore();
-
-    if (keys.w.pressed) player.position.y -= 3 / zoomLevel;
-    else if (keys.a.pressed) player.position.x -= 3 / zoomLevel;
-    else if (keys.s.pressed) player.position.y += 3 / zoomLevel;
-    else if (keys.d.pressed) player.position.x += 3 / zoomLevel;
+/*function showNextChunk() {
+  if (currentChunk < messageChunks.length - 1) {
+    currentChunk++;
+    updateCurrentChunk();
+  }
 }
 
+function showPreviousChunk() {
+  if (currentChunk > 0) {
+    currentChunk--;
+    updateCurrentChunk();
+  }
+}
+
+function updateCurrentChunk(){
+  const message = messageChunks[currentChunk];
+  quest1Launch();
+}*/
+
+/*function showNextDialogue() {
+  if (currentDialogueIndex < dialoguesLength - 1) {
+    hideLink(dialogues[currentDialogueIndex]);
+    currentDialogueIndex++
+    revealLink(dialogues[currentDialogueIndex]);
+  }
+};
+
+function showPreviousDialogue() {
+  if (currentDialogueIndex > 0) {
+    hideLink(dialogues[currentDialogueIndex]);
+    currentDialogueIndex--;
+    revealLink(dialogues[currentDialogueIndex]);
+  }
+    
+};*/
+
+/*function showDialogue(index) {
+    var humbleBeginningsIndex = document.getElementById('dialogue' + humbleBeginningsIndex);
+    humbleBeginningsIndex = index;
+
+    // Show the new current dialogue
+    var nextDialogue = document.getElementById('dialogue' + humbleBeginningsIndex);
+    nextDialogue.style.display = 'block';
+}*/
 
 
-animate()
+function quest1Launch(){
+  const message = messageChunks[currentChunk];
+  //level up sequence
+  var levelUp = false;
+  if (levelUp) {
+      levelNumber++;
+      document.getElementById('levelNumber').textContent = levelNumber;
+  }
+};
 
-let lastKey = ''
-window.addEventListener('keydown', (e) => {
-    switch (e.key){
-        case'w':
-            keys.w.pressed = true
-            lastKey = 'w'
-            break
 
-        case'a':
-            keys.a.pressed = true
-            lastKey = 'a'
-            break
 
-        case's':
-            keys.s.pressed = true
-            lastKey = 's'
-            break
 
-        case'd':
-            keys.d.pressed = true
-            lastKey = 'd'
-            break            
-    }
-})
-
-window.addEventListener('keyup', (e) => {
-    switch (e.key){
-        case'w':
-            keys.w.pressed = false
-            break
-
-        case'a':
-            keys.a.pressed = false
-            break
-
-        case's':
-            keys.s.pressed = false 
-            break
-
-        case'd':
-            keys.d.pressed = false
-            break            
-    }
-})
+ 
+ 
+  

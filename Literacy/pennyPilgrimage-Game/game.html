@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penny Pilgrimage</title>
     <link rel="stylesheet" href="game.css">
-    <script src="sidemenu.js"></script>
+    <script src="../sidemenu.js"></script>
+    <script src="data/boundaries.js"></script>
 </head>
 <body>
     <div class="hero">
         <nav>  
-            <img src="../images/menu.png" class="menu-img" alt="menu">
+            <img src="../images/menu.png" class="menu-img">
             <div class="side-menu" id="sideMenu">
-                <a href="../../Profile/index.html">Profile</a>
+                <a href="../Profile/index.html">Profile</a>
                 <a href="#">Help</a>
             </div>
             
             
-            <a href="../FL.html"><img src="../images/logo.png" class="logo" alt="logo"> </a>
+            <a href="FL.html"><img src="../images/logo.png" class="logo"> </a>
             <ul>
                 <li><a href="../Marketplace/index.html">Marketplace</a></li>
-                <li><a href="../FL.html">Financial Literacy</a></li>
+                <li><a href="FL.html">Financial Literacy</a></li>
                 <li><a href="https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:welcome-to-financial-literacy"
                         title="Check out khanacademy's financial literacy Course!">Course</a></li>
                 <li><a href="../Budget/index.html">Budget</a></li>
-                <li><a href="">My Cart</a></li>
+                <li><a href="../Marketplace/cart.html">My Cart</a></li>
                 <li><a href="../SignIn/Login/index.html" title="LogOut">LogOut</a></li>
                 <li class="dropdown" onclick="toggleDropdown()">
                     <a href="#" title="Learn more about the financial options available on each island.">Islands</a>
@@ -50,7 +51,42 @@
             </ul>
         </nav>
 
-        <canvas id="gameArea" width="960" height="720"></canvas>
+        <div style="background-color: white;" >
+            
+        </div>
+
+        <div id="canvasContainer" >
+            <div id="helpContent" class="hidden">
+                legend
+            </div>
+            <div id="gameBar"></div>
+            <button type="button" id="startButton" onclick="startGame()">Start</button>
+            <div id="gameNavBar">
+                <div id="navBarData" class="hidden">
+                    <div id="gameLevel">lvl: <span id="levelNumber">0</span></div>
+                    <div id="Pennies">$  <span id="money">    0</span></div>
+                    <div id="Tips">Tips:</div>
+                    <div id="Clue">Clue:</div>
+
+                </div>
+                <a href="#" id="questOnePrompt" class="hideable" onclick="revealLink('questOnePrompt'); hideLink('questOnePrompt')">click here to begin!</a>
+            </div>
+            <div id="message" class="hidden"></div>
+            <div id="ameliaDialogue" class="hidden"></div>
+            <div id="previous" class="hidden" onclick="showPreviousChunk()"></div>
+            <div id="next" class="hidden" onclick="showNextChunk()"></div>
+
+
+            <div id="dialogue1" class="hidden0">Welcome to the Penny Pilgrimage mini game - a fun and interactive way to learn money management skills!</div>
+            <div id="dialogue2" class="hidden0">Financial literacy is the ability to manage money wisely. Its never too late or early to start learning.</div>
+            <div id="dialogue3" class="hidden0">It includes budgeting, saving, investing, insurance, banking, debt, credit, payment methods, and earning.</div>
+            <!--It encompasses 9 areas: budgeting, saving, investing, insurance, banking, debt, credit, payment methods, and earning.-->
+            
+            
+            <canvas id="gameArea" width="960" height="720" ></canvas>    
+        </div>
+        
+
         <script src="game.js"></script>           
     
 </body>
