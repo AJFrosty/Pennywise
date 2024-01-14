@@ -28,6 +28,28 @@
           }
         }
       }
+    },
+    "Penny": {
+      "name": "Tester",
+      "role": "Guest",
+      "email": "test@pennywise.com",
+      "password": "password",
+      "cookie": 1,
+      "profile": {
+        "username": "IT The Clown",
+        "bio": "Hello CSO Community!!!!",
+        "budget": 1000,
+        "spent": 0,
+        "saved": 0
+      },
+      "budget": {
+        "expenses": {
+          "Groceries": 300,
+          "Clothing": 150,
+          "Cosmetics": 54,
+          "Technology": 135
+        }
+      }
     }
   }
 }

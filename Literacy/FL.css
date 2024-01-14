@@ -12,6 +12,10 @@ body{
     position: relative;
 }
 
+p {
+    font-size: 20px;
+}
+
 nav{
     position: relative;
     z-index: 1;
@@ -126,7 +130,7 @@ button span{
 
 .couch{
     position: absolute;
-    top: 118%;
+    top: 168%;
     left: -10%;
     transform: translateX(-50%);
     width: 275%;
@@ -161,7 +165,7 @@ button span{
     font-weight: 600;
     color: #FFBD59;
     font-family: Tahoma, sans-serif;  
-    text-align: right; 
+    text-align: center; 
 }
 
 .floating-text a{
