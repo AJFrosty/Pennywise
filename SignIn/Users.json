@@ -19,35 +19,28 @@
           "Clothing": 150,
           "Cosmetics": 50.25,
           "Technology": 110
-        },
-        "cart": {
-          "num": 1,
-          "items": {
-            "1": 1,
-            "2": 0
-          }
         }
       }
     },
-    "Penny": {
-      "name": "Tester",
+    "IT": {
+      "name": "IT THE CLOWN",
       "role": "Guest",
-      "email": "test@pennywise.com",
+      "email": "it@pennywise.com",
       "password": "password",
       "cookie": 1,
       "profile": {
-        "username": "IT The Clown",
-        "bio": "Hello CSO Community!!!!",
-        "budget": 1000,
+        "username": "IT THE CLOWN",
+        "bio": "Hello CSO Contestants!!!!",
+        "budget": 350,
         "spent": 0,
         "saved": 0
       },
       "budget": {
         "expenses": {
-          "Groceries": 300,
-          "Clothing": 150,
-          "Cosmetics": 54,
-          "Technology": 135
+          "Groceries": 0,
+          "Clothing": 0,
+          "Cosmetics": 0,
+          "Technology": 0
         }
       }
     }
