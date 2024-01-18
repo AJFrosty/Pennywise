@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: 2, name: "Healthy Lettuce", brand: "Ripe and Ready", price: 7.99, image: "prod/product2.png" },
         { id: 3, name: "Smart Watch", brand: "Infinity Tech", price: 59.50, image: "prod/product3.png" },
         { id: 4, name: "Black Bodycon and Gather Dress", brand: "Cassia's Clothing Store", price: 35.00, image: "prod/product4.png" },
-        // Add more products as needed
     ];
 
     const sliderContainer = document.getElementById("product-slider");
