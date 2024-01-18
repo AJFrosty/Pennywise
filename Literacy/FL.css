@@ -130,7 +130,7 @@ button span{
 
 .couch{
     position: absolute;
-    top: 168%;
+    top: 118%;
     left: -10%;
     transform: translateX(-50%);
     width: 275%;
@@ -145,7 +145,7 @@ button span{
     margin-top: 7%;
     margin-left: 75%;
     top: 60%;
-    font-size: 18px;
+    font-size: 14px;
     transform: translate(-50%, -50%);
     text-align: left;
     animation: floatAnimation 6s forwards;
@@ -161,7 +161,7 @@ button span{
 }
 
 .floating-text h1{
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 600;
     color: #FFBD59;
     font-family: Tahoma, sans-serif;  
