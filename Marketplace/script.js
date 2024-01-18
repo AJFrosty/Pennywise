@@ -1,5 +1,5 @@
 const businesses = [
-    { category: "clothing", name: "Marty's Clothing Store", logo: "img/clothing1.png", link: "#" },
+    { category: "clothing", name: "Marty's Clothing Store", logo: "img/clothing1.png", link: "clothing.html" },
     { category: "clothing", name: "Fashion Shop", logo: "img/clothing2.png", link: "#" },
     { category: "clothing", name: "Cassia's Cloth Store", logo: "img/clothing3.png", link: "#" },
     { category: "technology", name: "Tech Shop", logo: "img/tech1.png", link: "#" },
